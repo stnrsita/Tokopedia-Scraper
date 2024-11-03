@@ -18,7 +18,7 @@ With this scraper, you can extract essential details about "flat shoes" availabl
 
 Make sure you have the following installed on your machine:
 
-- Python 3.x
+- Python 3.1x.x
 - Pip (Python package installer)
 - Chrome WebDriver (for Selenium)
 
@@ -56,6 +56,10 @@ To run the scrapers, simply execute the following commands in your terminal:
 After running each script, the data will be saved in CSV files named:
 - `result_scraping_tokped_with_selenium.csv`
 - `result_scraping_tokped_with_requests.csv`
+
+### Data Comparison
+
+The data obtained from the **Selenium** scraper is generally more extensive because it utilizes a scrolling feature that loads more products as you scroll down the page, so it requires a relatively long execution time. In contrast, the **Requests** method captures only the products that are visible on the screen at the time of the request, leading to a more limited dataset and relatively fast execution time.
 
 ## Results
 
